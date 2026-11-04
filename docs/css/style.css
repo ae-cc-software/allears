@@ -3017,3 +3017,14 @@ select:focus-visible,
 .column-wrapper_text[style*="text-align:center"] p {
 	text-align: center;
 }
+/* The Events dropdown is short enough for one column. */
+@media (min-width: 1065px) {
+	.nav-holder nav li.has-drop--single ul.nav-drop {
+		width: 270px;
+		columns: 1;
+	}
+}
+/* A lone card on the last row sits in the middle rather than the left. */
+@media (min-width: 1065px) {
+	.work-grid--center .work-card:last-child:nth-child(3n+1) { grid-column: 2; }
+}
