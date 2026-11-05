@@ -435,7 +435,7 @@ blockquote p {
 	opacity: 0;
 }
 .hero-section {
-	margin-bottom: 150px;
+	margin-bottom: 50px;
 }
 /* taller hero with a shallower bottom fade, so the photo isn't squashed into a thin band */
 .hero-section_tall .hero-section_bg {
@@ -469,10 +469,10 @@ blockquote p {
 	margin-left: -25px;
 }
 .section {
-	margin: 90px 0;
+	margin: 40px 0;
 }
 .section-title {
-	margin: 0 0 90px 0;
+	margin: 0 0 50px 0;
 }
 .section-title h3 {
 	font-size: 30px;
@@ -496,7 +496,7 @@ blockquote p {
 .image-collage-wrap img {
 	width: 100%;
 	height: auto;
-	top: -60px;
+	top: 0;
 	position: relative;
 }
 .inline-facts-holder {
@@ -3027,4 +3027,10 @@ select:focus-visible,
 /* A lone card on the last row sits in the middle rather than the left. */
 @media (min-width: 1065px) {
 	.work-grid--center .work-card:last-child:nth-child(3n+1) { grid-column: 2; }
+}
+/* tighter section rhythm on phones */
+@media (max-width:1064px){
+.hero-section{margin-bottom:20px}
+.section{margin:30px 0}
+.section-title{margin-bottom:36px}
 }
