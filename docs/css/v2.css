@@ -1,19 +1,21 @@
 /* Page redesign (Nov 2026). Everything here is scoped under .v2, a class set
    on .content-holder for inner pages only. The home page and the site nav sit
    outside that scope, so nothing in this file can restyle them. */
-.v2{--v2-gut:clamp(18px,4vw,48px);--v2-panel:#121212;--v2-line:#2a2a2a;--v2-muted:#c4c4c4;--v2-top:clamp(44px,6vw,76px);text-align:left}
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&display=swap');
+.v2{--v2-font:'Archivo','Helvetica Neue',Helvetica,Arial,sans-serif;--v2-gut:clamp(18px,4vw,48px);--v2-panel:#121212;--v2-line:#2a2a2a;--v2-muted:#c4c4c4;--v2-top:clamp(44px,6vw,76px);text-align:left}
 .v2 .fixed-aside-btn{display:none}
+.v2,.v2 *:not(i):not([class*="fa-"]){font-family:var(--v2-font)}
 .v2 .content{padding:clamp(84px,7vw,100px) 0 0}
 .v2 p,.v2 li{font-size:17px;line-height:1.6;color:#dcdcdc;font-weight:400}
 .v2 p{padding-bottom:0;margin:0 0 14px}
-.v2 h3,.v2 h4,.v2 summary{font-family:'Poppins',sans-serif;color:#fff;text-align:left;text-transform:none;letter-spacing:-.005em}
+.v2 h3,.v2 h4,.v2 summary{font-family:var(--v2-font);color:#fff;text-align:left;text-transform:none;letter-spacing:-.005em}
 .v2 p a:not(.v2-btn),.v2 li a:not(.v2-btn){color:#fff;border-bottom:1px solid rgba(255,255,255,.4)}
 .v2 p a:not(.v2-btn):hover,.v2 li a:not(.v2-btn):hover{border-bottom-color:#fff}
 .v2 h4{font-size:21px;line-height:1.3;font-weight:600;margin:0 0 10px}
 .v2 .column-wrapper_text h4[style]{margin-top:26px !important}
 .v2 .section-title{float:none;width:100%;text-align:left;margin:0 0 26px;padding:0}
 .v2 .section-title:before,.v2 .section-title:after,.v2 .section-title h3:before,.v2 .section-title h3:after{display:none}
-.v2 .section-title h3,.v2 .v2-h2{font-size:clamp(27px,3.4vw,38px);line-height:1.15;font-weight:700;margin:0;color:#fff;text-align:left}
+.v2 .section-title h3,.v2 .v2-h2{font-size:clamp(28px,3.5vw,40px);line-height:1.12;font-weight:800;font-style:italic;letter-spacing:-.02em;margin:0;color:#fff;text-align:left}
 .v2 .column-wrapper_text{text-align:left}
 .v2 .column-wrapper_text ul:not(.serv-list){margin:0 0 16px;padding-left:22px;list-style:disc}
 .v2 .column-wrapper_text ul:not(.serv-list) li{padding:3px 0;text-align:left}
@@ -29,7 +31,7 @@
 .v2 .hero-section_bg .overlay{opacity:0;display:none}
 .v2 .hero-section_bg:before{top:auto;bottom:0;left:0;right:0;width:100%;height:75%;opacity:1;background:linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,.62) 58%,#000 100%);z-index:3}
 .v2 .hero-section_title{position:absolute;left:0;right:0;bottom:clamp(18px,3vw,36px);float:none;width:auto;max-width:1160px;margin:0 auto;padding:0 var(--v2-gut);text-align:left;z-index:2}
-.v2 .hero-section_title h1,.v2 .hero-section_title h1.h2{position:static;top:0;margin:0;font-family:'Poppins',sans-serif;font-size:clamp(35px,6vw,68px);line-height:1.08;font-weight:800;letter-spacing:-.015em;color:#fff;text-transform:none;text-align:left;max-width:15em}
+.v2 .hero-section_title h1,.v2 .hero-section_title h1.h2{position:static;top:0;margin:0;font-family:var(--v2-font);font-size:clamp(36px,6.2vw,72px);line-height:1.04;font-weight:800;font-style:italic;letter-spacing:-.025em;color:#fff;text-transform:none;text-align:left;max-width:15em}
 .v2 .hero-section_title h1:before,.v2 .hero-section_title h1:after{display:none}
 .v2 .hero-section_title .v2-sub{font-size:clamp(18px,2vw,22px);line-height:1.4;color:#fff;margin:10px 0 0}
 .v2 .hero-section_title .v2-btn{margin-top:20px}
@@ -79,14 +81,14 @@
 .v2 .v2-faq p{color:var(--v2-muted);margin:0 0 18px}
 
 /* Buttons and the closing enquiry band */
-.v2 a.v2-btn,.v2 .v2-btn{display:inline-block;padding:13px 26px;background:#fff;color:#000;font-size:15px;line-height:1.3;font-weight:600;font-family:'Poppins',sans-serif;border:1px solid #fff;border-radius:3px;text-align:center;cursor:pointer}
+.v2 a.v2-btn,.v2 .v2-btn{display:inline-block;padding:13px 26px;background:#fff;color:#000;font-size:15px;line-height:1.3;font-weight:600;font-family:var(--v2-font);border:1px solid #fff;border-radius:3px;text-align:center;cursor:pointer}
 .v2 a.v2-btn:hover,.v2 .v2-btn:hover{background:#e4e4e4;border-color:#e4e4e4}
 .v2 a.v2-btn.v2-ghost{background:transparent;color:#fff;border-color:#666}
 .v2 a.v2-btn.v2-ghost:hover{background:#1c1c1c;border-color:#fff}
 .v2 .v2-quote{text-align:center}
 .v2 .v2-quote .content-item{background:var(--v2-panel);padding:clamp(34px,5vw,60px) clamp(20px,4vw,48px)}
 .v2 .v2-quote .column-wrapper_text,.v2 .v2-quote h3{text-align:center}
-.v2 .v2-quote h3{font-size:clamp(27px,3.4vw,38px);line-height:1.15;font-weight:700;margin:0 0 12px}
+.v2 .v2-quote h3{font-size:clamp(28px,3.5vw,40px);line-height:1.12;font-weight:800;font-style:italic;letter-spacing:-.02em;margin:0 0 12px}
 .v2 .v2-quote p{color:var(--v2-muted);margin:0 auto 22px;max-width:540px}
 .v2 .v2-quote .v2-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:none;margin:0}
 .v2 .v2-foot{text-align:center;padding:12px 0 0}
@@ -139,14 +141,14 @@
 /* Contact page */
 .v2-contact .v2-c-wrap{max-width:1160px;margin:0 auto;padding:0 var(--v2-gut)}
 .v2-contact .v2-c-top{padding:clamp(30px,5vw,64px) 0 34px;border-bottom:1px solid var(--v2-line)}
-.v2-contact h1{font-family:'Poppins',sans-serif;font-size:13px;line-height:1.5;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--v2-muted);margin:0 0 14px;text-align:left}
+.v2-contact h1{font-family:var(--v2-font);font-size:13px;line-height:1.5;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--v2-muted);margin:0 0 14px;text-align:left}
 .v2-contact .v2-c-label{font-size:20px;color:var(--v2-muted);margin:0}
-.v2-contact a.v2-c-mail{display:inline-block;font-size:clamp(29px,6vw,64px);font-weight:800;letter-spacing:-.02em;line-height:1.15;margin-top:8px;color:#fff;border-bottom:3px solid #fff;overflow-wrap:anywhere}
+.v2-contact a.v2-c-mail{display:inline-block;font-size:clamp(30px,6.4vw,68px);font-weight:800;font-style:italic;letter-spacing:-.025em;line-height:1.15;margin-top:8px;color:#fff;border-bottom:3px solid #fff;overflow-wrap:anywhere}
 .v2-contact .v2-c-note{margin:18px 0 0;color:var(--v2-muted)}
 .v2-contact .v2-c-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(30px,6vw,80px);padding:44px 0 var(--v2-top)}
 .v2-contact form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .v2-contact .v2-field{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500;color:#fff;text-align:left;float:none;width:auto;margin:0}
-.v2-contact .v2-field input,.v2-contact .v2-field select,.v2-contact .v2-field textarea{float:none;width:100%;height:auto;margin:0;background:#000;color:#fff;border:1px solid #4d4d4d;border-radius:3px;padding:13px 14px;font:400 16px 'Poppins',sans-serif;box-shadow:none;-webkit-appearance:none;appearance:none}
+.v2-contact .v2-field input,.v2-contact .v2-field select,.v2-contact .v2-field textarea{float:none;width:100%;height:auto;margin:0;background:#000;color:#fff;border:1px solid #4d4d4d;border-radius:3px;padding:13px 14px;font:400 16px var(--v2-font);box-shadow:none;-webkit-appearance:none;appearance:none}
 .v2-contact .v2-field select{background-image:linear-gradient(45deg,transparent 50%,#fff 50%),linear-gradient(135deg,#fff 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 15px) 50%;background-size:5px 5px;background-repeat:no-repeat}
 .v2-contact .v2-field input::-webkit-calendar-picker-indicator{filter:invert(1)}
 .v2-contact .v2-field input:focus,.v2-contact .v2-field select:focus,.v2-contact .v2-field textarea:focus{outline:2px solid #fff;outline-offset:1px}
