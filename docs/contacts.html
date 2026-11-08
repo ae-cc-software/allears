@@ -25,6 +25,7 @@
         <!--=============== css  ===============-->
         <link type="text/css" rel="stylesheet" href="css/plugins.css">
         <link type="text/css" rel="stylesheet" href="css/style.css?v=20261105">
+        <link type="text/css" rel="stylesheet" href="css/v2.css?v=20261109">
         <!--=============== favicons ===============-->
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -136,63 +137,37 @@
             <!-- wrapper-->
             <div id="wrapper">
                 <!-- content-holder-->
-                <div class="content-holder hide_footer">
+                <div class="content-holder hide_footer v2 v2-contact">
                     <!-- content -->
                     <div class="header-bg"></div>
                     <!-- content-->
                     <div class="content fl-wrap">
-                        <!-- hero-section -->
-                        <div class="hero-section fl-wrap">
-                            <div class="hero-section_bg fl-wrap">
-                                <div class="bg" data-bg="events/hq/rvgarden20252.webp"></div>
-                                <div class="overlay"></div>
-                                <div class="hero-sec_anim"></div>
-                            </div>
-                            <div class="hero-section_title fl-wrap">
-                                <h1 class="h2">Get in touch! We're All Ears</h1>
-                            </div>
-                        </div>
-                        <!-- hero-section end-->
-                        <div class="clearfix"></div>
-                        <!-- container-->
-                        <div class="container small-container">
-                            <div class="fl-wrap content-item sec-anim" style="margin-bottom: 150px;">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="column-wrapper_text fl-wrap">
-                                            <p>Get in touch using the details below and we’ll get back to you.</p>
-                                            <p style="margin-top:10px; font-size:14px; opacity:0.7;">Office hours are Monday to Friday, 9am to 5pm. Events run all hours, including weekends.</p>
-                                            <p style="margin-top:10px; font-size:14px; opacity:0.7;">Dry hire pickups run through our self-service collections room, open 24/7. Delivery within Christchurch is $50+GST each way.</p>
-                                            <div class="contact-details fl-wrap">
-                                                <ul>
-                                                    <li><span>Mail :</span><a href="mailto:hello@allears.nz">hello@allears.nz</a></li>
-                                                    <li><span>Phone :</span><a href="tel:+64211780355">021 178 0355</a></li>
-                                                    <li><span>Address :</span><a href="https://maps.google.com/?q=20+Southwark+Street+Sydenham+Christchurch" target="_blank">20 Southwark Street, Sydenham, Christchurch 8023</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Contact form commented out - can be restored later -->
-                                    <!--
-                                    <div class="col-md-6">
-                                        <div id="contact-form" class="fl-wrap">
-                                            <div id="message"></div>
-                                            <form  class="custom-form" action="https://formsubmit.co/eaaa588765ccf4efdc232dfc63fbdf9a" name="contactform" id="contactform">
-                                                <fieldset>
-                                                    <input type="text" name="name" id="name" placeholder="Your Name *" class="cnt-anim" value=""/>
-                                                    <input type="text"  name="email" id="email" placeholder="Email Address *" class="cnt-anim" value=""/>
-                                                    <textarea name="comments"  id="comments" cols="40" rows="3" placeholder="Your Message:" class="cnt-anim"></textarea>
-                                                    <button class="cnt-anim" id="submit">Send Message </button>
-                                                </fieldset>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- container end-->
-                    </div>
+<div class="v2-c-wrap">
+<div class="v2-c-top"><h1>Get in touch! We're All Ears</h1><p class="v2-c-label">Email us</p><a class="v2-c-mail" href="mailto:hello@allears.nz">hello@allears.nz</a><p class="v2-c-note">Or fill in the form and we'll get back to you.</p></div>
+<div class="v2-c-grid">
+<form id="enquiry-form">
+<input type="hidden" name="_subject" value="New website enquiry">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<div class="v2-hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+<label class="v2-field">Your name *<input required name="name" autocomplete="name"></label>
+<label class="v2-field">Email *<input required type="email" name="email" autocomplete="email"></label>
+<label class="v2-field">Phone<input type="tel" name="phone" autocomplete="tel"></label>
+<label class="v2-field">Type of event<select name="event_type"><option value="">Choose one</option><option>School ball</option><option>Corporate</option><option>Wedding</option><option>Festival or concert</option><option>Birthday or private party</option><option>Dry hire only</option><option>Something else</option></select></label>
+<label class="v2-field">Event date<input type="date" name="event_date"></label>
+<label class="v2-field">Venue or town<input name="venue"></label>
+<label class="v2-field v2-full">What do you need? *<textarea required name="message" rows="6" placeholder="Numbers, gear, and anything else you know so far"></textarea></label>
+<div class="v2-full"><button class="v2-btn" type="submit" style="min-width:200px">Send enquiry</button></div>
+</form>
+<aside class="v2-c-info">
+<div><h3>Phone</h3><a class="v2-c-phone" href="tel:+64211780355">021 178 0355</a></div>
+<div><h3>Warehouse</h3><p><a href="https://maps.google.com/?q=20+Southwark+Street+Sydenham+Christchurch" target="_blank" rel="noopener">20 Southwark Street, Sydenham, Christchurch 8023</a></p></div>
+<div><h3>Office hours</h3><p>Monday to Friday, 9am to 5pm. Events run all hours, including weekends.</p></div>
+<div><h3>Dry hire</h3><p>Pickups run through our self-service collections room, open 24/7. Delivery within Christchurch is $50+GST each way.</p></div>
+</aside>
+</div>
+</div>
+</div>
                     <!-- content end-->
                     <div class="footer-bg fl-wrap">
                         <div class="footer-bg_polcy"></div>
@@ -241,5 +216,6 @@
 		<script src="js/jquery.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/v2.js?v=20261109"></script>
     </body>
 </html>
