@@ -1,6 +1,6 @@
 /* Contact form. Delegated from document because pages swap in by AJAX. */
 (function () {
-  var ENDPOINT = 'https://formsubmit.co/ajax/eaaa588765ccf4efdc232dfc63fbdf9a';
+  var ENDPOINT = 'https://formsubmit.co/ajax/hello@allears.nz';
 
   function show(form, html) {
     var box = document.createElement('div');
